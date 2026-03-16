@@ -1,12 +1,12 @@
 import React from 'react'
-function SupportPage() {
+function ProductPage() {
     return (  
         <div>
             <h1>
-                support page
+                Product page
             </h1>
         </div>
     );
 }
 
-export default SupportPage;
+export default ProductPage;
