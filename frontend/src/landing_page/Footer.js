@@ -71,7 +71,6 @@ function Footer() {
               Communication, Speedy redressal of the grievances
             </p>
             <p>
-              {" "}
               Smart Online Dispute Resolution Grievances Redressal Mechanism
             </p>
             <p>
