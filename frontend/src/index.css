@@ -18,3 +18,26 @@ code {
   text-decoration: none;
 }
 
+#supportHero{
+  background-color: rgb(56 ,126,209);
+  color: white;
+}
+#supportHero a{
+  color: white;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+
+}
+#supportHero input{
+  padding:10px 50px;
+  width: 90%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+
+
+}
