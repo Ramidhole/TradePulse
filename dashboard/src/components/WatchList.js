@@ -2,7 +2,7 @@ import React from 'react'
 import { useState  } from 'react';
 import { watchlist } from '../data/data';
 import{Tooltip , Grow} from "@mui/material"
-import {keyboardArrowDown , keyboardArrowUp} from "@mui/icons-material"
+import {BarChartOutlined, keyboardArrowDown , keyboardArrowUp, MoreHoriz} from "@mui/icons-material"
 
 const WatchList = () => {
   return (
@@ -57,12 +57,63 @@ return (
         <span className="price">{stock.price}</span>
       </div>
     </div>
+
+    {showWatchlistActions && <WatchListActions uid={stock.name}/>}
   </li>
 )
 
 };
 
 
+const WatchListActions = ({uid}) =>{
+
+  return (
+    <span className="actions">
+      <span>
+        <Tooltip
+          title="Buy(B)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="buy">Buy</button>
+        </Tooltip>
+
+        <Tooltip
+          title="sell (s)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="sell">sell</button>
+        </Tooltip>
+
+        <Tooltip
+          title="analytics (a)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className='action'>
+
+          <BarChartOutlined className='icon'/>
+          </button>
+        </Tooltip>
+
+        <Tooltip
+          title="more (m)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="action">
+            <MoreHoriz className='icons'/>
+          </button>
+        </Tooltip>
+      </span>
+    </span>
+  )
+}
 
 
 
