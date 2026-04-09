@@ -1,25 +1,13 @@
-const mongoose = require("mongoose")
+const {Schema} = require("mongoose");
 
-const HoldingsSchema = new mongoose.Schema({
-  name: {
-    type: String,
-  },
-  qty: {
-    type: Number,
-  },
-  avg: {
-    type: Number,
-  },
-  price: {
-    type: Number,
-  },
-  net: {
-    type: String,
-  },
-  day:{
-    type:String,
-  }
-  
+const HoldingsSchema = new Schema ({
+  name:String,
+  qty:Number,
+  avg:Number,
+  price:Number,
+  net:String,
+  day:String,
+
 })
 
 module.exports = {HoldingsSchema};
